@@ -1,0 +1,40 @@
+{
+  "spec":"slap://slapdomain/manifests/test/0_0_1",
+
+  "shortname":"Stest",
+  "name":"slap://S/tests/Stest/0_0_1",
+
+  "components":[
+    {
+      "name":"slap://S/components/C/0_0_1",
+      "git_url":"https://github.com/emiedes/slap-components-a",
+      "zip":"t_20160219_102345/components/C.zip",
+      "manifest":"t_20160219_102345/components/C.json"
+    },
+    {
+      "name":"slap://S/components/F/0_0_1",
+      "git_url":"https://github.com/emiedes/slap-components-b",
+      "zip":"t_20160219_102345/components/F.zip",
+      "manifest":"t_20160219_102345/components/F.json"
+    }
+  ],
+
+  "service":{
+    "name":"slap://S/services/S/0_0_1",
+    "git_url":"https://github.com/emiedes/slap-services",
+    "manifest":"t_20160219_102345/services/S.json"
+  },
+
+  "deploy":{
+    "git_url":"https://github.com/emiedes/slap-deploys",
+    "manifest":"t_20160219_102345/deploys/D.json"
+  },
+
+  "test":{
+    "git_url":"https://github.com/emiedes/slap-tests",
+    "app_tgz":"t_20160219_102345/tests/docker_image.tgz",
+    "launcher":"/abs/path/to/launcher.sh",
+    "data_zip":"t_20160219_102345/tests/test_data.zip",
+    "data_path":"/abs2/path2/to2/data2"
+  }
+}
